@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de jogo</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <div class="cadastro">
+        <h1>Cadastro de Jogos</h1>
+        <h3>Informe os dados do jogo que deseja cadastrar</h3>
+        <form action="estoque.html">
+            <form action="estoque.html">
+                <input type="text" placeholder="Título"><br><br>
+                <textarea class="info" placeholder="Descrição"></textarea><br><br>
+                <input type="text" placeholder="Gênero"><br><br>
+                <input type="text" placeholder="Classificação indicativa"><br><br>
+                <input type="text" placeholder="Código"><br><br>
+                <input type="number" placeholder="Estoque"><br><br>
+                <input type="text" placeholder="Preço"><br><br>
+                <input class="botaoPreto" onclick="Cadastro()" type="submit" value="Cadastrar">
+                <!-- <button class="botaoAzul" onclick="Cadastro()"><a href="estoque.html">Cadastrar</a></button> -->
+            </form>
+    </div>
+    <script type="text/javascript">
+        function Cadastro() {
+            alert('Jogo cadastrado com sucesso')
+        }
+    </script>
+</body>
+
+</html>

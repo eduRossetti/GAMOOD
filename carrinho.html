@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="catalogo-cliente.html">Catálogo</a>
+        <a class="botaoVermelho" href="carrinho.html">Carrinho</a>
+        <a class="botaoAzul" href="perfil-cliente.html">Meu perfil</a>
+        <a class="botaoVermelho" href="index-cliente.html">Inicio</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <section class="carrinho">
+
+        <div class="containerCarrinho">
+            <h2>Carrinho de Compras</h2>
+
+
+            <div class="containerTable">
+
+                <table id="tableCarrinho">
+                    <thead>
+                        <tr id="headerRow">
+                            <th>ITEM</th>
+                            <th>FOTO</th>
+                            <th>QUANTIDADE</th>
+                        </tr>
+                    </thead>
+                    <tdbody>
+                        <tr>
+                            <td>
+                                <p>WAR</p>
+                            </td>
+                            <td><img src="files/War.jpg" width="128px"></td>
+                            <td><input type="number" name="name" value="1" min="1" max="5"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Ludo</p>
+                            </td>
+                            <td><img src="files/ludo.jpg" width="128px"></td>
+                            <td><input type="number" name="name" value="1" min="1" max="5"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>Detetive</p>
+                            </td>
+                            <td><img src="files/Detetive.jpg" width="128px"></td>
+                            <td><input type="number" name="name" value="1" min="1" max="5"></td>
+                        </tr>
+                    </tdbody>
+                </table>
+
+            </div>
+
+
+            <h4>Selecione a quantidade de dias que deseja alugar os itens</h4>
+            <input type="number" name="name" value="3" min="3" max="31">
+            <h3>Valor total a ser pago</h3>
+            <h4>Total: R$71.91</h4>
+
+
+            <a class="botaoAzul" href="checkout.html">Ir para o pagamento</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

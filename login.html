@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--linka o CSS com o HTML-->
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="botao-index">
+        <a class="botaoPreto" href="catalogo.html">Catálogo</a>
+        <a class="botaoVermelho" href="cadastro.html">Cadastro</a>
+        <a class="botaoAzul" href="index.html">Inicio</a>
+    </div>
+    <div class="login">
+
+        <h1>Entre na sua conta</h1>
+
+        <h3>Bem vindo de volta!</h3>
+        <input class="info" type="email" id="email" name="email" placeholder="Email"> <br><br>
+        <input class="info" type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+        <button class="botaoVermelho" onclick="Verify()">Entrar</button>
+        <p>Entrar com o Google</p>
+        <img src="files/google_logo.png" alt="Icone Google">
+        <img src="files/google.png" alt="escrita google">
+
+        <p>Não tem conta ainda? <strong><a href="cadastro.html">Faça seu cadastro!</a></strong></p>
+    </div>
+
+    <script type="text/javascript">
+        function Verify() {
+            let email = document.getElementById("email").value;
+            console.log(email);
+            if (email == "adm@gamood.com") {
+                location.replace("index-adm.html");
+            }
+            else if (email !== "" && email !== "adm@gamood.com") {
+                location.replace("index-cliente.html");
+            }
+        }
+    </script>
+</body>
+
+</html>

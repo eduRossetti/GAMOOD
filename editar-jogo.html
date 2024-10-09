@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Editar dados</title>
+</head>
+
+<body>
+
+    <!-- → O valor do jogo;
+    → O código de barras do jogo;
+    → A quantidade de jogos que foi disponibilizada; -->
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <div class="cadastro">
+        <h2>Alteração dos Dados de Jogos</h2>
+        <!-- Formulário de cadastro-->
+        <!--Campos para informações do jogo-->
+        <h3>Informe os dados que deseja alterar do jogo</h3>
+        <form action="estoque.html">
+            <input id="codigo" type="text" placeholder="Código"><br><br>
+            <input id="estoque" type="number" placeholder="Estoque"><br><br>
+            <input id=valor type="text" placeholder="Preço"><br><br>
+            <input class="botaoAzul" onclick="Alterar()" type="submit" value="Salvar alterações">
+            <!-- <button class="botaoAzul" onclick="Alterar()"><a href="estoque.html">Salvar alterações</a></button> -->
+        </form>
+    </div>
+    <script type="text/javascript">
+        document.getElementById('codigo').value = 'J-0010';
+        document.getElementById('estoque').value = '12';
+        document.getElementById('valor').value = '7.99';
+        function Alterar() {
+            alert('Jogo alterado com sucesso')
+        }
+    </script>
+</body>
+
+</html>

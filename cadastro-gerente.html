@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastrar gerente</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+
+    <body>
+        <div class="cadastro">
+            <h1>Cadastro de Gerente</h1>
+            <form action="funcionarios.html">
+
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome"> <br><br>
+                <label for="CPF"></label>
+                <input type="text" id="CPF" name="CPF" placeholder="Digite o CPF"> <br><br>
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Digite o e-mail"> <br><br>
+                <label for="senha"></label>
+                <input type="password" id="senha" name="senha" placeholder="Digite a senha"> <br><br>
+                <label for="matricula"></label>
+                <input type="text" id="codigo" name="codigo" placeholder="Digite o seu codigo de Segurança"> <br><br>
+                <input class="botaoAzul" onclick="Cadastro()" type="submit" value="Cadastrar">
+                <!-- <button class="botaoAzul" onclick="Cadastro()"><a href="funcionarios.html">Cadastrar</a></button> -->
+            </form>
+        </div>
+        <script type="text/javascript">
+            function Cadastro() {
+                alert('Gerente cadastrado com sucesso')
+            }
+        </script>
+    </body>
+
+</html>

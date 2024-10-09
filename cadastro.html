@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css"> <!--linka o CSS com o HTML-->
+</head>
+
+<body class="">
+    <div class="botao-index">
+        <a class="botaoPreto" href="catalogo.html">Catálogo</a>
+        <a class="botaoVermelho" href="login.html">Login</a>
+        <a class="botaoAzul" href="index.html">Inicio</a>
+    </div>
+    <div class="cadastro">
+        <h1>Cadastre-se</h1>
+        <h3>*Obrigatório</h3>
+        <form action="index-cliente.html">
+            <label for="nome"></label>
+            <input class="info" type="text" id="nome" name="nome" placeholder="Digite o nome*"> <br><br>
+
+            <label for="endereço"></label>
+            <input class="info" type="text" id="endereço" name="endereco" placeholder="Digite o seu endereço*"> <br><br>
+
+            <label for="CPF"></label>
+            <input class="info" type="text" id="CPF" name="CPF" placeholder="Digite o CPF*"> <br><br>
+
+            <label for="senha"></label>
+            <input class="info" type="password" id="senha" name="senha" placeholder="Digite a senha*"> <br><br>
+
+            <label for="telefone"></label>
+            <input class="info" type="text" id="telefone" name="telefone" placeholder="Digite o telefone*"> <br>
+
+            <h3>Cadastre seu cartão de crédito</h3>
+            <p>você pode fazer o cadastro do cartão quando completar sua compra</p>
+            <label for="numCartao"></label>
+            <input class="info" type="text" id="numCartao" name="numCartao" placeholder="Digite o numero de cartão">
+            <br><br>
+
+            <label for="nomeCartao"></label>
+            <input class="info" type="text" id="nomeCartao" name="nomeCartao" placeholder="Digite o nome no cartão">
+            <br><br>
+
+            <label for="validadeCartao"></label>
+            <input class="info" type="text" id="validadeCartao" name="validadeCartao"
+                placeholder="Digite o código de verificação do cartão"> <br><br>
+
+            <label for="codCartao">Data de Validade: </label><br>
+            <input class="info" type="date" id="codCartao" name="codCartao"> <br><br>
+            <input class="botaoAzul" onclick="Cadastro()" type="submit" value="Cadastrar">
+        </form>
+    </div>
+    <script type="text/javascript">
+        function Cadastro() {
+            alert('Perfil cadastrado com sucesso')
+        }
+    </script>
+</body>
+
+</html>

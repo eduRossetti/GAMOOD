@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Clientes</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div><br><br><br>
+    <div class="filtro">
+        <label>Buscar</label><br>
+        <input type="text" placeholder="Digite o nome do cliente"><br>
+        <input class="botaoPreto" type="submit" value="Filtrar" onclick="alertFiltro()">
+    </div>
+    <div>
+        <h1>Clientes cadastrados</h1>
+
+        <div class="containerTable">
+            <table class="table-clientes">
+                <tbody>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+
+                    <tr>
+                        <td>Eduardo Rossetti</td>
+                        <td>Chapecó, Efapi, Rua Castelo Branco, 15D</td>
+                        <td>(49) 92222-1111</td>
+                        <td>eduardo.rossetti@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Giselly Zamboni</td>
+                        <td>Chapecó, Centro, Rua Getúlio Vargas, 74E</td>
+                        <td>(49) 93333-1111</td>
+                        <td>giselly.zamboni@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Yuri Magnan</td>
+                        <td>Chapecó, Centro, Rua Barão do Rio Branco, 66D</td>
+                        <td>(49) 94444-1111</td>
+                        <td>yuri.magnan@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Felipe Pagani</td>
+                        <td>Chapecó, Seminário, Rua Nereu Ramos, 150E</td>
+                        <td>(49) 95555-1111</td>
+                        <td>felipe.pagani@gmail.com</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <center><a id="cadastrar-cliente" href="cadastrar-cliente.html"><strong>Cadastrar novo
+                    cliente</strong></a></center>
+    </div>
+    <script type="text/javascript">
+        function alertFiltro() {
+            alert("Busca realizada");
+        }
+    </script>
+
+</body>
+
+</html>
