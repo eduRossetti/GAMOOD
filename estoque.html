@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Estoque</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div><br><br><br>
+    <div class="filtro">
+        <label>Buscar</label><br>
+        <input type="text" placeholder="Digite o nome do jogo"><br>
+        <input class="botaoPreto" type="submit" value="Filtrar" onclick="alertFiltro()">
+    </div>
+    <div>
+        <h1>Jogos em estoque</h1>
+
+        <center><a class="botaoPreto" href="relatorio.html"><strong>Relatório</strong></a></center>
+        <div class="containerTable">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Jogo</th>
+                        <th>Código</th>
+                        <th>Diária</th>
+                        <th>Quantidade</th>
+                        <th>Editar informações</th>
+                        <th>Excluir item</th>
+                    </tr>
+
+                    <tr>
+                        <td>WAR</td>
+                        <td>J-0010</td>
+                        <td>9.99</td>
+                        <td>8</td>
+                        <td><a class="botaoAzul" href="editar-jogo.html"><strong>Editar informações</strong></a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Banco Imobiliário</td>
+                        <td>J-0011</td>
+                        <td>6.99</td>
+                        <td>12</td>
+                        <td><a class="botaoAzul" href="editar-jogo.html"><strong>Editar informações</strong></a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Detetive</td>
+                        <td>J-0012</td>
+                        <td>7.99</td>
+                        <td>5</td>
+                        <td><a class="botaoAzul" href="editar-jogo.html"><strong>Editar informações</strong></a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ludo</td>
+                        <td>J-0013</td>
+                        <td>5.99</td>
+                        <td>8</td>
+                        <td><a class="botaoAzul" href="editar-jogo.html"><strong>Editar informações</strong></a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <center><a class="botao-ver-p" href="cadastrar-jogo.html"><strong>Cadastrar novo
+                    jogo</strong></a></center>
+    </div>
+    <br><br><br><br>
+    <div class="filtro">
+        <label>Buscar</label><br>
+        <input type="text" placeholder="Digite o nome do alimento"><br>
+        <input class="botaoPreto" type="submit" value="Filtrar" onclick="alertFiltro()">
+    </div>
+    <div>
+        <h1>Alimentos em estoque</h1>
+
+        <div class="containerTable">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Alimento</th>
+                        <th>Código</th>
+                        <th>Preço porção</th>
+                        <th>Quantidade</th>
+                        <th>Fornecedor</th>
+                        <th>Excluir</th>
+                    </tr>
+
+                    <tr>
+                        <td>Batata</td>
+                        <td>A-0010</td>
+                        <td>9.99</td>
+                        <td>10kg</td>
+                        <td>Sadia Alimentos</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pizza</td>
+                        <td>A-0011</td>
+                        <td>6.99</td>
+                        <td>25</td>
+                        <td>Aurora Alimentos</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Refrigerante</td>
+                        <td>A-0012</td>
+                        <td>7.99</td>
+                        <td>50</td>
+                        <td>Coca-cola</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Suco</td>
+                        <td>A-0013</td>
+                        <td>5.99</td>
+                        <td>15L</td>
+                        <td>Sucos da Marta</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <center><a class="botao-ver-p" href="cadastrar-alimento.html"><strong>Cadastrar novo
+                    alimento</strong></a></center>
+    </div>
+    <script type="text/javascript">
+        function Excluir() {
+            alert('Item excluído')
+        }
+        function alertFiltro() {
+            alert("Busca realizada");
+        }
+    </script>
+
+</body>
+
+</html>

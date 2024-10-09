@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Alterar gerente</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <div class="cadastro">
+        <h1>Dados do Gerente</h1>
+        <form action="funcionarios.html">
+            <label for="nome"></label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome"> <br><br>
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Digite o e-mail"> <br><br>
+            <label for="senha"></label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a senha"> <br><br>
+            <label for="codigo de Segurança"></label>
+            <input type="text" id="codigo" name="codigo" placeholder="Digite o seu codigo de Segurança"> <br><br>
+            <input class="botaoPreto" onclick="Alterar()" type="submit" value="Salvar alterações">
+            <!-- <button class="botaoPreto" onclick="Alterar()"><a href="funcionarios.html">Salvar alterações</a></button> -->
+        </form>
+    </div>
+    <script>
+        // Preenche automaticamente os campos do formulário
+        document.getElementById('nome').value = 'Eduardo Rossetti';
+        document.getElementById('senha').value = '070306';
+        document.getElementById('codigo').value = 'codigo123';
+        document.getElementById('email').value = 'eduardo.rossetti@gamood.com';
+        function Alterar() {
+            alert('Alterado com sucesso')
+        }
+    </script>
+</body>
+
+</html>

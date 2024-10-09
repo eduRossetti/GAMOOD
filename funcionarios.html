@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lista de funcionarios</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div><br><br><br>
+    <div class="filtro">
+        <label>Buscar</label><br>
+        <input type="text" placeholder="Digite o nome do funcionario"><br>
+        <input class="botaoPreto" type="submit" value="Filtrar" onclick="alertFiltro()">
+    </div>
+    <div class="lista">
+        <h1>Funcionarios</h1>
+
+        <div class="containerTable">
+            <table class="table-clientes">
+                <tbody>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                        <th>Senha</th>
+                        <th>Matricula</th>
+                        <th>Alterar dados</th>
+                        <th>Excluir</th>
+                    </tr>
+                    <tr>
+                        <td>Giselly Zamboni</td>
+                        <td>333.444.555-66</td>
+                        <td>giselly.zamboni@gamood.com</td>
+                        <td>cachorro12345</td>
+                        <td>020304</td>
+                        <td><a class="botaoVermelho" href="altera-func.html">Editar</a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Felipe Pagani</td>
+                        <td>444.555.666-77</td>
+                        <td>felipe.pagani@gamood.com</td>
+                        <td>lagarto456</td>
+                        <td>010705</td>
+                        <td><a class="botaoVermelho" href="altera-func.html">Editar</a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <center><a id="cadastrar-cliente" href="cadastro-func.html"><strong>Cadastrar novo
+                    funcionário</strong></a></center>
+        <br><br><br>
+    </div>
+    <div class="lista">
+        <h1>Gerentes</h1>
+
+        <div class="containerTable">
+            <table class="table-clientes">
+                <tbody>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                        <th>Senha</th>
+                        <th>Código de segurança</th>
+                        <th>Alterar dados</th>
+                        <th>Excluir</th>
+                    </tr>
+
+                    <tr>
+                        <td>Eduardo Rossetti</td>
+                        <td>111.222.333-44</td>
+                        <td>eduardo.rossetti@gamood.com</td>
+                        <td>macaco123</td>
+                        <td>070306</td>
+                        <td><a class="botaoVermelho" href="altera-gerente.html">Editar</a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>Yuri Magnan</td>
+                        <td>222.333.444-55</td>
+                        <td>yuri.magnan@gamood.com</td>
+                        <td>borboleta1234</td>
+                        <td>150404</td>
+                        <td><a class="botaoVermelho" href="altera-gerente.html">Editar</a></td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+                    <tr>
+                </tbody>
+            </table>
+
+        </div>
+        <center><a id="cadastrar-cliente" href="cadastro-gerente.html"><strong>Cadastrar novo
+                    gerente</strong></a></center>
+    </div>
+    <script type="text/javascript">
+        function Excluir() {
+            alert('Funcionario excluído')
+        }
+        function alertFiltro() {
+            alert("Busca realizada");
+        }
+    </script>
+
+</body>
+
+</html>

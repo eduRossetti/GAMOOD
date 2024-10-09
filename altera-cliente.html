@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Alterar dados</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <div class="perfil">
+
+        <h1>Dados do cliente</h1>
+        <form action="perfil-cliente.html">
+            <label for="nome"></label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome"> <br><br>
+
+            <label for="endereço"></label>
+            <input type="text" id="endereço" name="endereco" placeholder="Digite o seu endereço"> <br><br>
+
+            <label for="senha"></label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a senha"> <br><br>
+
+            <label for="telefone"></label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite o telefone"> <br><br>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Digite o email"> <br><br>
+            <input class="botaoPreto" onclick="Alterar()" type="submit" value="Salvar alterações">
+        </form>
+    </div>
+    <script>
+        // Preenche automaticamente os campos do formulário
+        document.getElementById('nome').value = 'Matheus Borges';
+        document.getElementById('endereço').value = 'Rua Almiro de Miranda';
+        document.getElementById('senha').value = '12345';
+        document.getElementById('telefone').value = '(11) 5555-5555';
+        document.getElementById('email').value = 'matheusb@gmail.com';
+        function Alterar() {
+            alert('Alterado com sucesso')
+        }
+    </script>
+</body>
+
+</html>

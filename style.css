@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'SaboFilled';
+    src: url('files/Sabo-Filled.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'OutfitVariable';
+    src: url('files/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #333;
+}
+
+/* index css */
+#bg {
+    /* filter: brightness(50%); */
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 500px;
+}
+
+.botaoPreto {
+    font-family: 'SaboFilled', sans-serif;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.botaoPreto:hover {
+    background-color: #1a1a1a;
+    cursor: pointer;
+}
+
+.botaoAzul {
+    font-family: 'SaboFilled', sans-serif;
+    background-color: #30b0ff;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.botaoAzul:hover,
+td button:hover {
+    background-color: #0a3e61;
+    cursor: pointer;
+}
+
+.botaoVermelho {
+    font-family: 'SaboFilled', sans-serif;
+    background-color: #ef0808;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.botaoVermelho:hover,
+.botao-ver-p:hover {
+    background-color: #b10e0e;
+    cursor: pointer;
+}
+
+
+.botao-index {
+    width: 100%;
+    padding: 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#func {
+    height: 200px;
+    padding: 20px;
+}
+
+.sobre-nos {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 20px;
+    color: white;
+}
+
+.sobre-nos p {
+    font-family: 'OutfitVariable', sans-serif;
+}
+
+.sobre-nos h1 {
+    font-family: 'SaboFilled', sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SaboFilled', sans-serif;
+}
+
+.footer-column {
+    width: 30%;
+    padding: 10px;
+}
+
+.footer-column h3 {
+    font-family: 'SaboFilled', sans-serif;
+    font-size: 25px;
+}
+
+.footer-column p {
+    font-family: 'OutfitVariable', sans-serif;
+    text-align: center;
+}
+
+.map {
+    text-align: center;
+}
+
+/* login */
+
+.info,
+input {
+    font-family: 'OutfitVariable', sans-serif;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #1d1d1d;
+    color: white;
+    border-width: 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.login {
+    text-align: center;
+    color: white;
+}
+
+.login h1,
+h3 {
+    font-family: 'SaboFilled';
+}
+
+.login p,
+h4,
+form {
+    font-family: 'OutfitVariable';
+}
+
+/* index adm */
+#flexBox {
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-wrap: nowrap; */
+    text-align: center;
+    max-width: 100%;
+}
+
+#flexBox img {
+    width: 30%;
+}
+
+/* catalogo */
+h1,
+h2,
+h3 {
+    color: white;
+    font-family: 'SaboFilled';
+    text-align: center;
+}
+
+h4,
+h5,
+h6,
+p,
+li,
+.aluguel,
+label {
+    color: white;
+    font-family: 'OutfitVariable';
+}
+
+ul {
+    list-style: none;
+
+}
+
+/* carrinho */
+
+.carrinho h3 {
+    text-align: left;
+}
+
+.pagamento {
+    text-align: center;
+    color: white;
+}
+
+.containerLogo {
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.containerTable {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-width: 100%;
+    font-family: 'OutfitVariable', sans-serif;
+    padding-top: 4rem;
+    color: white;
+
+
+}
+
+.containerTable th {
+    font-family: 'SaboFilled';
+    font-size: 24px;
+    background-color: #1a1a1a;
+    /* border: 2px solid rgb(41, 41, 41); */
+}
+
+.containerTable button {
+    font-family: 'OutfitVariable', sans-serif;
+    background-color: #30b0ff;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+#cadastrar-jogo,
+#cadastrar-alimento,
+#cadastrar-cliente,
+.botao-ver-p {
+    font-family: 'SaboFilled', sans-serif;
+    background-color: #ef0808;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.8rem 0 0.8rem 0;
+    font-size: 24px;
+}
+
+
+/* catalogo */
+.containerCatalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.containerItem {
+    border: 2px solid #30b0ff;
+    padding: 3rem;
+    width: 40%;
+    height: 500px;
+    margin: 0.25rem;
+}
+
+.containerDetalhes {
+    border: 3px solid white;
+    padding: 3rem;
+    width: 60%;
+    /* margin: 0.25rem; */
+    margin: 0 auto 0 auto;
+}
+
+.containerDetalhes h3,
+.containerDetalhes h4 {
+    font-size: 36px;
+}
+
+.containerDetalhes h5 {
+    font-size: 24px;
+}
+
+#tableCarrinho {
+    width: 100%;
+    background-color: #3b3b3b;
+}
+
+#tableCarrinho td,
+th {
+    padding: 2rem;
+}
+
+.containerCarrinho {
+    padding: 3rem;
+    width: 70%;
+    margin: 0.25rem;
+    margin: 0 auto 0 auto;
+}
+
+.containerCarrinho h4,
+.containerCarrinho h5 {
+    font-size: 24px;
+}
+
+#headerRow {
+    background-color: #222121;
+    color: white;
+    font-size: 20px;
+    font-family: 'SaboFilled';
+}
+
+/* cadastro */
+.cadastro {
+    text-align: center;
+}
+
+.cadastro h3 {
+    font-family: 'OutfitVariable';
+}
+
+#esqueci-senha {
+    font-family: 'OutfitVariable';
+    color: #30b0ff;
+}
+
+.table-clientes td {
+    padding: 15px;
+}
+
+.perfil {
+    text-align: center;
+}
+
+.perfil h3 {
+    font-family: 'OutfitVariable';
+}
+
+form {
+    text-align: center;
+}
+
+.lista {
+    margin: 1rem;
+}
+
+.containerRelatorio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-width: 100%;
+    font-family: 'OutfitVariable', sans-serif;
+    padding-top: 4rem;
+    color: white;
+}
+
+.containerRelatorio th {
+    font-family: 'SaboFilled';
+    font-size: 18px;
+    background-color: #1a1a1a;
+    /* border: 2px solid rgb(41, 41, 41); */
+}
+
+.containerRelatorio td {
+    padding: 3%;
+    font-size: 18px;
+}
+
+.filtro {
+    text-align: center;
+    padding: 1rem;
+}

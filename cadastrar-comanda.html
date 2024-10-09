@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastrar alimento</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <div class="cadastro">
+        <h1>Cadastro de Alimento</h1>
+        <!-- Formulário de cadastro-->
+        <!--Campos para informações do jogo-->
+        <h3>Informe os dados do alimento para adicionar na comanda</h3>
+        <form action="comanda.html">
+            <input type="text" placeholder="Alimento"><br><br>
+            <input type="text" placeholder="Código"><br><br>
+            <input type="text" placeholder="Preço"><br><br>
+            <input type="number" placeholder="Porções"><br><br>
+            <input class="botaoAzul" onclick="Cadastro()" type="submit" value="Adicionar">
+            <!-- <button class="botaoAzul" onclick="Cadastro()"><a href="comanda.html">Adicionar</a></button> -->
+        </form>
+    </div>
+    <script type="text/javascript">
+        function Cadastro() {
+            alert('Alimento adicionado com sucesso')
+        }
+    </script>
+</body>
+
+</html>

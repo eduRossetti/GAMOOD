@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Estoque</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="estoque.html">Estoque</a>
+        <a class="botaoVermelho" href="lista-clientes.html">Clientes</a>
+        <a class="botaoAzul" href="funcionarios.html">Funcionarios</a>
+        <a class="botaoVermelho" href="cadastro-mesa.html">Mesas</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+    <div>
+        <h1>Alimentos na comanda da mesa</h1>
+
+        <div class="containerTable">
+            <table class="table-alimentos">
+                <tbody>
+                    <tr>
+                        <th>Alimento</th>
+                        <th>Código</th>
+                        <th>Preço</th>
+                        <th>Porções</th>
+                        <th>Excluir</th>
+                    </tr>
+
+                    <tr>
+                        <td>Batata</td>
+                        <td>A-0010</td>
+                        <td>9.99</td>
+                        <td>3</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pizza</td>
+                        <td>A-0011</td>
+                        <td>6.99</td>
+                        <td>2</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Refrigerante</td>
+                        <td>A-0012</td>
+                        <td>7.99</td>
+                        <td>5</td>
+                        <td><button onclick="Excluir()">X</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <center><a id="cadastrar-alimento" href="cadastrar-comanda.html"><strong>Cadastrar novo alimento</strong></a>
+        </center>
+        <center><a id="cadastrar-alimento" href="cadastro-mesa.html"><strong>Voltar</strong></a></center>
+    </div>
+    <script type="text/javascript">
+        function Excluir() {
+            alert('Item excluído')
+        }
+    </script>
+
+</body>
+
+</html>

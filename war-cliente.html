@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>War</title>
+</head>
+
+<body>
+    <!-- buttons -->
+    <div class="botao-index">
+        <a class="botaoPreto" href="catalogo-cliente.html">Catálogo</a>
+        <a class="botaoVermelho" href="carrinho.html">Carrinho</a>
+        <a class="botaoAzul" href="perfil-cliente.html">Meu perfil</a>
+        <a class="botaoVermelho" href="index-cliente.html">Inicio</a>
+        <a class="botaoPreto" href="index.html">Sair</a>
+    </div>
+
+    <body class="FundoDetalhes">
+        <section class="detalhesJogo">
+            <h2>Detalhes do Jogo</h2>
+
+            <div class="containerDetalhes">
+
+                <h3>WAR</h3>
+                <p>Gênero: Ação, Faz de conta<br>
+                    Classificação etária: juvenil e adulto <br>
+                    Número de jogadores: 3 a 6</p>
+                <h5>Diária: R$9.99</h5>
+                <img src="files/war.jpg" height="400px">
+                <h5>Avaliações e classificações dos clientes </h5>
+                <p><strong>Eduardo Rossetti</strong> diz:</p>
+                <p>★★★★★ Excelente para passar o tempo</p>
+                <p><strong>Giselly Zamboni</strong> diz:</p>
+                <p>★★★★★ Um jogo clássico para os mais velhos, muito bom reviver este jogo.</p>
+                <br>
+                <button class="botaoAzul" onclick="alertCarrinho()">Adicionar ao carrinho</button>
+                <a class="botaoPreto" href="catalogo-cliente.html">Voltar para o catálogo</a>
+
+            </div>
+
+        </section>
+        <script type="text/javascript">
+            let contProd = 0;
+
+            function alertCarrinho() {
+                alert("Item adicionado ao carrinho de compras");
+                contProd++;
+                console.log(contProd);
+                document.getElementById('contProd').innerHTML = contProd;
+            }
+        </script>
+        <footer>
+            <div class="footer-column">
+                <h3>Formas de contato</h3>
+                <p><strong>Telefone:</strong> (49) 91234-5678</p>
+                <p><strong>Email:</strong> gamood@games.com</p>
+                <p><strong>Facebook:</strong> @Gamood</p>
+                <p><strong>Instagram:</strong> @gamood.games</p>
+                <p><strong>Youtube:</strong> Gamood</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Horários</h3>
+                <p><strong>Segunda-feira:</strong> 11:00 - 22:00</p>
+                <p><strong>Terça-feira:</strong> 11:00 - 22:00</p>
+                <p><strong>Quarta-feira:</strong> 11:00 - 22:00</p>
+                <p><strong>Quinta-feira:</strong> 11:00 - 22:00</p>
+                <p><strong>Sexta-feira:</strong> 11:00 - 23:00</p>
+                <p><strong>Sábado:</strong> 10:00 - 23:00</p>
+                <p><strong>Domingo:</strong> 10:00 - 20:00</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Localização</h3>
+                <div class="map">
+                    <div class="Mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.4998580319143!2d-52.61540812750684!3d-27.10906164954512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b5ea85fe620f%3A0xf5994e5bde049f2a!2sTaquaras%20Bar!5e0!3m2!1spt-BR!2sbr!4v1698426405469!5m2!1spt-BR!2sbr"
+                            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <p>Rua Ponoé Scheffer 120-E</p>
+                <p>Centro, Chapecó</p>
+                <p>89812-160</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
